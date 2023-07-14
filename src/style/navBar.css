@@ -1,0 +1,32 @@
+/* Style for the navigation bar */
+nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  /* Style for the unordered list */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style for the list items */
+  li {
+    margin: 0 10px;
+  }
+  
+  /* Style for the anchor tags */
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
