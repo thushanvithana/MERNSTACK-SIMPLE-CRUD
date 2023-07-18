@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 20px; /* Adding some padding for spacing */
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #e5e2e2;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  filter: contrast(1.5) brightness(1.5);
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 5s linear infinite;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
+  text-transform: uppercase;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+
+
+.horizontal-line {
+  border-top: 1px solid black;
+  width: 100%; /* You can adjust the width to your preference */
+}
+
+
